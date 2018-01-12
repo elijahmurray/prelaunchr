@@ -23,6 +23,7 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'guard-livereload'
   gem 'pry'
   gem 'rspec-rails', '3.4.2'
   gem 'rspec-mocks', '3.4.1'
