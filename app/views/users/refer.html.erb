@@ -2,9 +2,6 @@
 <div class="header">
   <div class="content">
     <div class="header-content">
-      <a href="https://habit.com" target="_blank"><div class="habit-logo"></div></a>
-    </div>
-    <div class="header-content">
       <p>Thank you for signing up!</p>
     </div>
   </div>
@@ -12,14 +9,11 @@
 <!-- Hero -->
 <div class="hero">
   <div class="page-content clearfix">
-    <!-- <div class=""> -->
       <div class="hero-headline-wrapper">
-        <h1>Share Habit,<br>Get Rewarded</h1>
-        <p class="hero-headline">Share your unique promo code <%= @user.referral_code %> and the link below via email, Facebook or Twitter and earn an Amazon eGift Card* for each friend who purchases a Habit kit.</p>
+      <h1><%= I18n.t('referral_page.title_html').html_safe %> </h1>
+      <p class="hero-headline"><%= I18n.t('referral_page.instructions') %></p>
       </div>
-    <!-- </div> -->
       <div class="share-wrapper">
-<!--         <p>Share your unique link via email, Facebook<br>or Twitter and earn an Amazon eGift Card<br>each friend who purchases a Habit kit.</p> -->
         <div class="copy-link-wrapper">
           <div class="copy-link">
             <span><%= referral_link(@user.referral_code) %></span>
@@ -67,10 +61,10 @@
       <ul class="clearfix">
         <li class="title">
           <div class="prize-data">
-            <p>FRIENDS PURCHASED</p>
+            <p><%= I18n.t('referral_page.rewards.referrals_label') %></p>
           </div>
           <div class="progress-bottom prize-data">
-            <p> &#36;&#36; RECEIVED</p>
+            <p><%= I18n.t('referral_page.rewards.rewards_label') %></p>
           </div>
         </li>
 
@@ -138,14 +132,8 @@
       <% end %>
     </div>
 
-    <div class="amazon-footer" >
-      <p>
-        * Referred friends must use your personal link when purchasing the service, and must be new customers to Habit. An <a href="https://amazon.com" target="_blank">Amazon.com</a> Gift Card (the "Reward") is earned when a kit is shipped to the referred customer: <a href="https://amazon.com" target="_blank">Amazon.com</a> is not a sponsor of this promotion. Except as required by law, <a href="https://amazon.com" target="_blank">Amazon.com</a> Gift Cards ("GCs") cannot be transferred for value or redeemed for cash. GCs may be used only for purchases of eligible goods at <a href="https://amazon.com" target="_blank">Amazon.com</a> or certain of its affiliated websites. For complete terms and conditions, see <a href="https://www.amazon.com/gc-legal">https://www.amazon.com/gc-legal</a>. GCs are issued by ACI Gift Cards, Inc., a Washington corporation. All Amazon ®, ™ & © are IP of <a href="https://amazon.com" target="_blank">Amazon.com</a>, Inc. or its affiliates. No expiration date or service fees.
-      </p>
-    </div>
-
     <div class="terms">
-      <p>See Habit referral program terms and conditions <%= link_to "here", terms_path, {:style => 'text-decoration: underline'} %></p>
+      <p>See <%= I18n.t('config.company_name') %> referral program terms and conditions <%= link_to "here", terms_path, {:style => 'text-decoration: underline'} %>.</p>
     </div>
 
   </div>

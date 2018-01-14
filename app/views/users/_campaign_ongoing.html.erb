@@ -1,6 +1,6 @@
-<h2>Join the Program</h2>
+<h2><%=I18n.t('homepage.form_title')%></h2>
 <%= form_for @user, :url => { :action => "create" } do |f| %>
-  <%= f.text_field :email, :placeholder => "Enter Email*", :class => "email" %>
+  <%= f.text_field :email, :placeholder => I18n.t('homepage.email_form_placeholder'), :class => "email" %>
   <%= f.submit I18n.t('homepage.submit_email_text'), class: "submit" %>
 <% end %>
 <div class="clearfix"></div>

@@ -2,6 +2,8 @@
   NEW PAGE
 \*------------------------------------*/
 
+$light-text-shadow: 0px 2px 5px rgba(0,0,0,.5);
+
 // min-width: 0px
 #new {
   .hero{
@@ -11,20 +13,20 @@
       position: relative;
       margin: 20px auto;
       text-align: center;
-       img {
-        width: 100px;
-        height: 42px;
-       }
     }
     .hero-headline-wrapper {
       h1 {
+        color: $white;
+        text-shadow: $light-text-shadow; 
+
         &::after {
           background-color: $white;
         }
       }
       p {
-        line-height: 20px;
+        font-size: 1.5em;
         margin-bottom: 50px;
+        text-shadow: $light-text-shadow; 
       }
     }
   }
@@ -85,11 +87,7 @@
     .hero {
       background-image: image-url("new/header-bg-tablet.jpg");
       .logo-wrapper {
-        margin: 25px auto 30px auto;
-        img {
-          width: 150px;
-          height: 63px;
-        }
+        margin: 0px auto;
       }
       .hero-headline-wrapper {
         h1 {
@@ -129,7 +127,7 @@
     .hero {
       background-image: image-url("new/header-bg-desktop.jpg");
       .hero-headline-wrapper {
-        width: 325px;
+        width: 425px;
         p {
           margin-bottom: 70px;
         }

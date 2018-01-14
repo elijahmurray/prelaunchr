@@ -31,12 +31,6 @@ class User < ActiveRecord::Base
       'html' => '$100 Earned',
       'class' => 'four',
       'count_label' => '3'
-    },
-    {
-      'count' => 4,
-      'html' => '<p class="last_amount">$125+ Earned<span class="subtext">$25 earned for each additional referral</span></p>',
-      'class' => 'five',
-      'count_label' => '4+',
     }
   ]
 
