@@ -21,3 +21,6 @@ en:
     rewards:
       referrals_label: "FRIENDS JOINED"
       rewards_label: "CARDS EARNED"
+    social_message:
+      facebook: ! "Can't wait for @greetingcardclb to launch! Never going to forget another birthday. #BirthdaySkills %{referral_link}"
+      twitter: ! "Can't wait for @greetingcardclb to launch! Never going to forget another birthday. #BirthdaySkills %{referral_link}"

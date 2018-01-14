@@ -18,7 +18,7 @@
     }
   }
   .header {
-    background: $gray;
+    background: $brand-primary;
     .habit-logo {
       width: 96px;
       height: 40px;
@@ -31,8 +31,13 @@
       font-size: 15px;
     }
   }
+  .hero-darkened-background {
+    background: url("refer/header-bg-desktop.jpg") center;
+  }
+  .hero-black-background {
+    background-color: rgba(0,0,0,.3);
+  }
   .hero{
-    background-image: image-url("refer/header-bg-desktop.jpg");
     display: block;
     .hero-headline-wrapper {
       margin-top: 20px;
@@ -48,7 +53,7 @@
           overflow-x: hidden; // update this to somethign better
           text-align: center;
           span {
-            color: $gray-lightest;
+            color: $gray-medium;
             display: inline-block;
             white-space: nowrap;
             // width: 150%; // update this to somethign better
@@ -264,6 +269,7 @@
 
       .hero-headline {
         max-width: 428px;
+        // margin: 0 auto;
       }
     }
     .copy-link-wrapper {

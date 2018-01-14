@@ -7,27 +7,31 @@
   </div>
 </div>
 <!-- Hero -->
-<div class="hero">
-  <div class="page-content clearfix">
-      <div class="hero-headline-wrapper">
-      <h1><%= I18n.t('referral_page.title_html').html_safe %> </h1>
-      <p class="hero-headline"><%= I18n.t('referral_page.instructions') %></p>
-      </div>
-      <div class="share-wrapper">
-        <div class="copy-link-wrapper">
-          <div class="copy-link">
-            <span><%= referral_link(@user.referral_code) %></span>
+<div class="hero-darkened-background">
+  <div class="hero-black-background">
+    <div class="hero">
+      <div class="page-content clearfix">
+          <div class="hero-headline-wrapper">
+          <h1><%= I18n.t('referral_page.title_html').html_safe %> </h1>
+          <p class="hero-headline"><%= I18n.t('referral_page.instructions') %></p>
           </div>
-          <div class="social-links">
-            <%= social_share_button_tag(@facebook_share_message,
-                                        :url => referral_link(@user.referral_code),
-                                        :desc => @facebook_share_message.gsub(/'/,"&apos;"),
-                                        :image => image_url('refer/social.jpg'),
-                                        :'data-twitter-title' => @twitter_share_message,
-                                        :'data-facebook-title' => @facebook_share_message.gsub(/'/,"&apos;"),
-                                        :'data-source' => image_url('refer/social.jpg'),
-                                        :'data-caption' => image_url('refer/social.jpg'),
-            ) %>
+          <div class="share-wrapper">
+            <div class="copy-link-wrapper">
+              <div class="copy-link">
+                <span><%= referral_link(@user.referral_code) %></span>
+              </div>
+              <div class="social-links">
+                <%= social_share_button_tag(@facebook_share_message,
+                                            :url => referral_link(@user.referral_code),
+                                            :desc => @facebook_share_message.gsub(/'/,"&apos;"),
+                                            :image => image_url('refer/social.jpg'),
+                                            :'data-twitter-title' => @twitter_share_message,
+                                            :'data-facebook-title' => @facebook_share_message.gsub(/'/,"&apos;"),
+                                            :'data-source' => image_url('refer/social.jpg'),
+                                            :'data-caption' => image_url('refer/social.jpg'),
+                ) %>
+              </div>
+            </div>
           </div>
         </div>
       </div>
