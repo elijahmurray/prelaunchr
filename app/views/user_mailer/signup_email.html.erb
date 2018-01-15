@@ -2,10 +2,10 @@
 <html xmlns="http//www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
 <head>
   <meta http-equiv="content-type" content="text/html" charset="utf-8">
-  <meta property="og:title" content="Personalized Nutrition Designed for Better Health & Weight Loss | Habit"/>
+  <meta property="og:title" content=<%= I18n.t('config.metadata.description') %>/>
   <meta property="og:description" content="<%= generate_facebook_share_message(@user.referral_code) %>"/>
 
-  <title>Habit Referral Program</title>
+  <title><%= I18n.t('config.company_name') %> Referral Program</title>
 
   <style>
     body {
@@ -16,17 +16,17 @@
 
 <body style="display: block; font-family: arial; margin: 0; padding: 0;">
   <div style="display: none; font-size: 1px; color: #333333; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
-    Open for your unique Habit referral code and link.
+    Open for your unique <%= I18n.t('config.company_name') %> referral code and link.
   </div>
     <table class="table" style="display: block; width: 100%;" bgcolor="#ffffff">
     <thead class="table-head" style="margin-top: 20px; display: block; width: 100%; text-align: center;">
-      <tr style="display: block; font-family: arial;"><td style="display: block; font-family: arial;"><%= image_tag image_url('email/logo.png'), alt: 'Habit Logo', :style => "margin-bottom: 10px;" %></td></tr>
-      <tr style="display: block; font-family: arial;"><td style="display: block; font-family: arial;"><%= image_tag image_url('email/header-image.jpg'), alt: 'Habit Header', :style => "width: 100%; height: auto; max-width: 600px;" %></td></tr>
+      <tr style="display: block; font-family: arial;"><td style="display: block; font-family: arial;"><%= image_tag image_url('email/logo.png'), alt: '<%= I18n.t('config.company_name') %> Logo', :style => "margin-bottom: 10px;" %></td></tr>
+      <tr style="display: block; font-family: arial;"><td style="display: block; font-family: arial;"><%= image_tag image_url('email/header-image.jpg'), alt: '<%= I18n.t('config.company_name') %> Header', :style => "width: 100%; height: auto; max-width: 600px;" %></td></tr>
     </thead>
 
     <tbody style="display: block; text-align: center; font-size: 14px; padding-left: 10px; padding-right: 10px;">
       <tr style="display: block; font-family: arial;">
-        <td class="body-header-text" style="display: block; margin: 0 auto; padding: 30px 10px; font-family: arial; font-weight: bold; font-size: 22px; color: #4A4A4A; max-width: 430px;">You’ll get an Amazon gift card for each friend who completes a purchase.</td>
+        <td class="body-header-text" style="display: block; margin: 0 auto; padding: 30px 10px; font-family: arial; font-weight: bold; font-size: 22px; color: #4A4A4A; max-width: 430px;"><%= I18n.t('referral.short_description') %></td>
         <td class="body-message-text" style="display: block; font-family: arial;">Forward this unique promo code <%= @user.referral_code %> and link to your friends:</td>
         <td class="body-link-wrapper" style="display: block; font-family: arial; padding-top: 30px; padding-bottom: 30px;"><input class="body-main-link" disabled="disabled" type="text" value="<%= referral_link(@user.referral_code) %>" style="font-size: 20px; background-color: #F6F6F5; color: #CBCACA; max-width: 340px; padding: 10px; border: 1px solid #979797;" /></td>
         <td style="display: block; font-family: arial;">Or share online:</td>
@@ -35,16 +35,16 @@
       <tr style="display: block; font-family: arial;">
         <td class="social-links" style="display: block; font-family: arial; padding-top: 30px; padding-bottom: 30px;">
           <a href="http://twitter.com/share?url=<%= referral_link(@user.referral_code) %>&text=<%= CGI::escape(generate_twitter_share_message(@user.referral_code)) %>" target="_blank"> <%= image_tag image_url('email/twitter-social.jpg'), :style => "max-width: 47px;" %></a> &nbsp;
-          <a href="http://www.facebook.com/sharer/sharer.php?u=<%= referral_link(@user.referral_code) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Habit&quote=<%= CGI::escape(generate_facebook_share_message(@user.referral_code)) %>" target="_blank"><%= image_tag image_url('email/facebook-social.jpg'), :style => "max-width: 47px;" %></a>
+          <a href="http://www.facebook.com/sharer/sharer.php?u=<%= referral_link(@user.referral_code) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=<%= I18n.t('config.company_name') %>&quote=<%= CGI::escape(generate_facebook_share_message(@user.referral_code)) %>" target="_blank"><%= image_tag image_url('email/facebook-social.jpg'), :style => "max-width: 47px;" %></a>
         </td>
       </tr>
     </tbody>
 
     <tfoot style="background-color: #F6F6F5; display: block; text-align: center; font-size: 10.5px; padding: 20px;">
       <tr style="display: block; font-family: arial;">
-        <td class="habit-address" style="display: block; font-family: arial;">Habit, LLC,  985 3rd Street Oakland, CA 94607</td>
-        <td class="habit-copy" style="display: block; font-family: arial;">Copyright © 2017 Habit, LLC, All rights reserved.</td>
-        <td class="habit-unsubscribe" style="display: block; font-family: arial;"><a href="#">Unsubscribe</a> or <a href="#">Manage Preferences</a></td>
+        <td class="brand-address" style="display: block; font-family: arial;"><%= I18n.t('config.admin_company_name') %>, <%= I18n.t('config.admin_company_address') %>.</td>
+        <td class="brand-copy" style="display: block; font-family: arial;">Copyright © 2017 <%= I18n.t('config.admin_company_name') %>, All rights reserved.</td>
+        <td class="brand-unsubscribe" style="display: block; font-family: arial;"><a href="#">Unsubscribe</a> or <a href="#">Manage Preferences</a></td>
       </tr>
     </tfoot>
   </table>

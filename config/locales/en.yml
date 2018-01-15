@@ -22,9 +22,10 @@ en:
     submit_email_text: "Step Inside"
     email_form_subtext: ""
     email_form_placeholder: "Enter Email"
-  referral_page:
+  referral:
     title_html: "Giving Cards <br> Just Got Easier"
     instructions: "Share your unique link via email, Facebook, or Twitter and get rewarded, courtesy of The Greeting Card Club."
+    short_description: "Get free cards when a friend buys a card!"
     rewards:
       referrals_label: "FRIENDS JOINED"
       rewards_label: "CARDS EARNED"

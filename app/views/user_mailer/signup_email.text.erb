@@ -1,5 +1,4 @@
-You’ll get a $25 Amazon gift card for each friend who
-completes a purchase.
+<%= I18n.t('referral.short_description') %>
 Forward this unique promo code <%= @user.referral_code %> and link to your friends:
 
 Or share online:
@@ -7,7 +6,7 @@ Or share online:
 Twitter: ( http://twitter.com/share?url=<%= referral_link(@user.referral_code) %>&text=<%= CGI::escape(generate_twitter_share_message(@user.referral_code)) %> )
 Facebook: ( http://www.facebook.com/sharer/sharer.php?u=<%= referral_link(@user.referral_code) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Habit )
 
-Habit, LLC,  985 3rd Street Oakland, CA 94607
-Copyright © 2017 Habit, LLC, All rights reserved.
+<%= I18n.t('config.admin_company_name') %>, <%= I18n.t('config.admin_company_address') %>
+Copyright © 2017 <%= I18n.t('config.admin_company_name') %>, All rights reserved.
 
 Unsubscribe ( # ) or Manage Preferences ( # )
