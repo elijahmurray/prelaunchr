@@ -62,10 +62,10 @@ Prelaunchr::Application.configure do
 
   config.action_mailer.default_url_options = { :host => ENV['SMTP_DOMAIN'] }
   config.action_mailer.smtp_settings = {
-    address:              ENV.fetch('SMTP_ADDRESS', 'smtp.mandrillapp.com'),
+    address:              ENV.fetch('SMTP_ADDRESS', 'smtp.sendgrid.net'),
     port:                 ENV.fetch('SMTP_PORT', '587'),
-    password:             ENV.fetch('SMTP_PASSWORD', 'hello'),
-    user_name:            ENV.fetch('SMTP_USERNAME', 'world'),
+    password:             ENV.fetch('SMTP_PASSWORD', 'u2wiexgt5000'),
+    user_name:            ENV.fetch('SMTP_USERNAME', 'app85500809@heroku.com'),
     authentication:       :plain,
     enable_starttls_auto: true,
   }
