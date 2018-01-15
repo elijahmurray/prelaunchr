@@ -17,12 +17,6 @@ module ApplicationHelper
       "http://example.com"
     when "development"
       "http://lvh.me:3000"
-    # when "staging" # staging
-    #   "https://staging.habitbeta.com"
-    when "acceptance"
-      "https://#{papaya_credentials}myacceptance.habitbeta.com"
-    # when "qa"
-    #   "https://myqa.habitbeta.com"
     when "production"
       "https://my.habit.com"
     else

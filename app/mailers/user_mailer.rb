@@ -1,10 +1,10 @@
 class UserMailer < ActionMailer::Base
-  default from: "Habit <support@habit.com>"
+  default from: I18n.t('config.mail.from') + "<" + I18n.t('config.mail.from_email') + ">"
   add_template_helper(ApplicationHelper)
 
   def signup_email(user_id)
     @user = User.find user_id
 
-    mail(:to => @user.email, :subject => "Start sharing Habit to earn $100+ in Amazon eGift Cards")
+    mail(:to => @user.email, :subject => I18n.t('config.mail.subject'))
   end
 end

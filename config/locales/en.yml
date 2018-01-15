@@ -8,6 +8,10 @@ en:
     admin_company_name: "Blue Fantail, LLC"
     admin_company_address: "43-01 22nd St, #408 Long Island City, NY 11101"
     admin_company_url: "http://www.bluefantail.com"
+    mail:
+      from: 'Greeting Card Club'
+      from_email: 'support@thegreetingcardclub.com'
+      subject: "Start sharing Habit to earn $100+ in Amazon eGift Cards"
   amazon_policies:
     section_1: ""
     section_2: ""

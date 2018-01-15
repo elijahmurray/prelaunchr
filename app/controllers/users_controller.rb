@@ -26,21 +26,10 @@ class UsersController < ApplicationController
 
     if @user.save
       cookies[:h_email] = { value: @user.email }
-
-      # post user email and referral code to papaya
-      begin
-        uri = URI.parse("#{papaya_url}/referrals")
-        Rails.logger.info("Sending referral info to #{uri}, code: #{@user.referral_code} sender: #{@user.email}")
-        Net::HTTP.post_form(uri, {"code" => @user.referral_code, "sender" => @user.email})
-        redirect_to '/refer-a-friend' and return
-      rescue StandardError => e
-        Rails.logger.info("Error saving user with email, #{email}")
-        redirect_to root_path, alert: "Something went wrong! #{ e.message}" and return
-      end
-
+      redirect_to '/refer-a-friend'
     else
-      Rails.logger.info("Error saving user with email, #{email}")
-      redirect_to root_path, alert: 'Something went wrong! ' + @user.errors.full_messages.join("\n")
+      logger.info("Error saving user with email, #{email}")
+      redirect_to root_path, alert: 'Something went wrong!'
     end
   end
 
