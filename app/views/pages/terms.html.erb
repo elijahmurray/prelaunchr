@@ -1,10 +1,10 @@
 <div style="padding: 30px">
-<b>Habit Refer-a-Friend Program</b><br />
+<b><%= I18n.t('config.company_name')%> Refer-a-Friend Program</b><br />
 <br />
 TERMS AND CONDITIONS<br />
-Habit ("we", "Habit" or "Company") may, from time to time, offer users of our service ("Service") the opportunity to refer friends to try the Service ("Habit Referral Program" or "Program"). We reserve the right to terminate the Program at any time for any reason. The Program is administered by Habit, LLC, 985 3rd Street, Oakland, CA 94607, United States ("Service Provider").<br />
+<%= I18n.t('config.company_name')%> ("we", "<%= I18n.t('config.company_name')%>" or "Company") may, from time to time, offer users of our service ("Service") the opportunity to refer friends to try the Service ("<%= I18n.t('config.company_name')%> Referral Program" or "Program"). We reserve the right to terminate the Program at any time for any reason. The Program is administered by <%= I18n.t('config.admin_company_name')%>, <%= I18n.t('config.admin_company_address')%> ("Service Provider").<br />
 <br />
-By participating in the Program, you agree to be bound by these Terms and Conditions and Habit's Terms of Service (<a href="https://Habit.com/terms-conditions">https://Habit.com/terms-conditions</a>) (collectively, the "Terms"). If you do not agree to these Terms in their entirety you are not authorized to register as a Referrer (defined below) or participate in the Program in any manner. Users (defined below) may not participate in the Program where doing so would be prohibited by any applicable law or regulations. <br />
+By participating in the Program, you agree to be bound by these Terms and Conditions and <%= I18n.t('config.company_name')%>'s Terms of Service (<a href="https://<%= I18n.t('config.admin_company_url')%>/terms-conditions">https://<%= I18n.t('config.admin_company_url')%>.com/terms-conditions</a>) (collectively, the "Terms"). If you do not agree to these Terms in their entirety you are not authorized to register as a Referrer (defined below) or participate in the Program in any manner. Users (defined below) may not participate in the Program where doing so would be prohibited by any applicable law or regulations. <br />
 <br />
 We reserve the right to modify or amend at any time the Terms and the methods through which Rewards are earned. We reserve the right to disqualify any User at any time from participation in the Program if he/she does not comply with any of the Terms or such participation would be in violation of applicable law. <br />
 <br />
@@ -12,12 +12,12 @@ We reserve the right to modify or amend at any time the Terms and the methods th
 No part of the Program is directed to persons under the age of 18. IF YOU ARE UNDER 18 YEARS OF AGE, YOU ARE NOT ELIGIBLE TO PARTICIPATE IN THE PROGRAM. PLEASE DO NOT USE OR ACCESS THE PROGRAM AT ANY TIME OR IN ANY MANNER. <br />
 <br />
 <b>1. Privacy.</b> <br />
-Individuals may participate in the Program to recommend services or content made available by Company to their friends, family or colleagues. To do this, individuals must necessarily submit personal information about themselves and their friends, family members or colleagues, such as name and e-mail address information ("Contact Information"), so that the Company can send these recommendations on their behalf. Individuals must not provide Company with personal information about their friends, family members or colleagues without the express or implied consent of those friends, family members or colleagues. Contact Information will be collected, processed and used in accordance with Company's Privacy Statement, which can be found at <a href="https://Habit.com/privacy-policy">https://Habit.com/privacy-policy</a>. In addition, an individual's Contact Information may be used by Company to contact individuals regarding their participation in the Program and to receive communications from Company. If an individual provides Contact Information about its friends, family members or colleagues to receive communications via the Program, the provided Contact Information will be used by the Company to send these communications on behalf of the individual and the individual understands that Company may (if permitted by applicable law) send out additional follow-up communications on behalf of the individual to encourage or remind the friends, family members or colleagues to complete the purchase or registration process. <br />
+Individuals may participate in the Program to recommend services or content made available by Company to their friends, family or colleagues. To do this, individuals must necessarily submit personal information about themselves and their friends, family members or colleagues, such as name and e-mail address information ("Contact Information"), so that the Company can send these recommendations on their behalf. Individuals must not provide Company with personal information about their friends, family members or colleagues without the express or implied consent of those friends, family members or colleagues. Contact Information will be collected, processed and used in accordance with Company's Privacy Statement, which can be found at <a href="https://<%= I18n.t('config.company_name')%>.com/privacy-policy">https://<%= I18n.t('config.company_name')%>.com/privacy-policy</a>. In addition, an individual's Contact Information may be used by Company to contact individuals regarding their participation in the Program and to receive communications from Company. If an individual provides Contact Information about its friends, family members or colleagues to receive communications via the Program, the provided Contact Information will be used by the Company to send these communications on behalf of the individual and the individual understands that Company may (if permitted by applicable law) send out additional follow-up communications on behalf of the individual to encourage or remind the friends, family members or colleagues to complete the purchase or registration process. <br />
 <br />
 <b>2. How the Program Works.</b> <br />
 <br />
 Program Participation<br />
-To participate in the Program, visit refer.habit.com and follow the on-screen instructions to refer friends, family members or colleagues to the Service by entering their email addresses in the "Refer A Friend" box. Users may refer an unlimited number of friends, family members or colleagues during the Program. <br />
+To participate in the Program, visit refer.<%= I18n.t('config.company_name')%>.com and follow the on-screen instructions to refer friends, family members or colleagues to the Service by entering their email addresses in the "Refer A Friend" box. Users may refer an unlimited number of friends, family members or colleagues during the Program. <br />
 <br />
 Individuals who refer are called "Referrers." Individuals who receive such referral are called "Referred Customers." "User" means any person using the Program and includes, without limitation, Referrers and Referred Customers. <br />
 <br />
@@ -41,16 +41,15 @@ A Qualified Referral means that all the following conditions are met: <br />
 &nbsp; &nbsp; &nbsp;4. The Referred Customer does not cancel the order and is shipped a kit from the Company. <br />
 <br />
 Only one Qualified Referral can be earned for each Referred Customer during the Program term. Any additional or subsequent purchases made by a Referred Customer will not be Qualified Referrals. <br />
-<b>Earning Rewards</b><br />
+<!-- <b>Earning Rewards</b><br />
 Referrer shall receive the following Reward for each Qualified Referral, regardless of the number of kits or purchases made by the Referred Customer, unless otherwise specified below: <br />
-&nbsp; &nbsp; &nbsp;&bull;For a referral of Habit Core, Reward valued at twenty five dollars (US$25); <br />
-&nbsp; &nbsp; &nbsp;&bull;For a referral of Habit Core with DNA Import, Reward valued at twenty five dollars (US$25); <br />
-<br />
+&nbsp; &nbsp; &nbsp;&bull;For a referral of <%= I18n.t('config.company_name')%> Core, Reward valued at twenty five dollars (US$25); <br />
+&nbsp; &nbsp; &nbsp;&bull;For a referral of <%= I18n.t('config.company_name')%> Core with DNA Import, Reward valued at twenty five dollars (US$25); <br />
+<br /> -->
 At the Company's sole discretion, Reward denomination may be different during special promotional periods. <br />
 <br />
-Rewards may be redeemed in various forms in the Company's sole discretion. Check your Habit Refer-a-Friend account for details. Additional restrictions may apply. For example, if the Reward is in the form of a gift card, gift certificate or voucher, it may be subject to the issuer's terms and conditions. <br />
+Rewards may be redeemed in various forms in the Company's sole discretion. Check your <%= I18n.t('config.company_name')%> Refer-a-Friend account for details. Additional restrictions may apply. For example, if the Reward is in the form of a gift card, gift certificate or voucher, it may be subject to the issuer's terms and conditions. <br />
 <br />
-Amazon.com is not a sponsor of this promotion. Except as required by law, Amazon.com Gift Cards ("GCs") cannot be transferred for value or redeemed for cash. GCs may be used only for purchases of eligible goods at Amazon.com or certain of its affiliated websites. For complete terms and conditions, see www.amazon.com/gc-legal. GCs are issued by ACI Gift Cards, Inc., a Washington corporation. All Amazon ®,™ & © are IP of Amazon.com, Inc. or its affiliates. No expiration date or service fees.
 The logos and other identifying marks attached are trademarks of and owned by each represented company and/or its affiliates. Please visit each company's website for additional terms and conditions. <br />
 <br />
 <b>Verification of Qualified Referrals</b><br />
@@ -59,7 +58,7 @@ Rewards are subject to verification. The Company may delay a Reward for the purp
 All of the Company's decisions are final and binding, including decisions as to whether a Qualified Referral, Credit or Reward is verified. <br />
 <br />
 <b>Transfer and Value of Credit and Rewards</b><br />
-Credit and Rewards may not be redeemed for cash with Habit. Credit and Rewards are not transferable and may not be auctioned, traded, bartered or sold. Upon termination of the Program or any portion thereof for any reason, or upon cancellation of a Referrer's Habit referral account for any reason, any unredeemed Credit and Rewards accumulated by the Referrer may be forfeited. <br />
+Credit and Rewards may not be redeemed for cash with <%= I18n.t('config.company_name')%>. Credit and Rewards are not transferable and may not be auctioned, traded, bartered or sold. Upon termination of the Program or any portion thereof for any reason, or upon cancellation of a Referrer's <%= I18n.t('config.company_name')%> referral account for any reason, any unredeemed Credit and Rewards accumulated by the Referrer may be forfeited. <br />
 <br />
 <b>3. Content Ownership and Use.</b><br />
 The online platform and the Program contain contents that may include designs, text, graphics, images, video, information, logos, button icons, audio files, computer code, and other content (collectively, "Content"). As between the User and the Company, all Content is the property of the Company or its licensors and is protected under copyright, trademark, and other laws. The compilation (meaning the collection, arrangement, and assembly) of all Content on the online platform or Program is the exclusive property of the Company and is protected by copyright, trademark, and other laws. <br />
@@ -89,7 +88,7 @@ Users agree not to use the Program to, or otherwise: <br />
 &nbsp; &nbsp; &nbsp;&bull;Violate applicable law or these Terms; <br />
 &nbsp; &nbsp; &nbsp;&bull;Infringe the intellectual property rights of the Company, its Service Provider or any third parties; <br />
 &nbsp; &nbsp; &nbsp;&bull;Stalk, harass, or harm another individual; <br />
-&nbsp; &nbsp; &nbsp;&bull;Use any mark, name or domain name of any type which is confusingly similar to Habit or Company's other Marks, or bid on or purchase any word, keyword, search term or other identifier on any pay-per-click search engines that contains Habit's Marks or Content; <br />
+&nbsp; &nbsp; &nbsp;&bull;Use any mark, name or domain name of any type which is confusingly similar to <%= I18n.t('config.company_name')%> or Company's other Marks, or bid on or purchase any word, keyword, search term or other identifier on any pay-per-click search engines that contains <%= I18n.t('config.company_name')%>'s Marks or Content; <br />
 &nbsp; &nbsp; &nbsp;&bull;Make any inaccurate or untruthful statements about the Company or its services; <br />
 &nbsp; &nbsp; &nbsp;&bull;Collect or store personal data about other Users; <br />
 &nbsp; &nbsp; &nbsp;&bull;Impersonate any person or otherwise misrepresent User's identity; <br />
@@ -100,7 +99,7 @@ Users agree not to use the Program to, or otherwise: <br />
 &nbsp; &nbsp; &nbsp;&bull;Conduct any illegal activity or solicit the performance of any illegal activity or other activity that infringes the rights of others; <br />
 &nbsp; &nbsp; &nbsp;&bull;Resell Company's products or services (and any attempt to do so shall be void and Company shall invalidate any such services); or<br />
 &nbsp; &nbsp; &nbsp;&bull;Resell, barter, trade, auction or otherwise generate income by providing access to the Program to others. <br />
-&nbsp; &nbsp; &nbsp;&bull;Promote Habit or place referral links on any site that includes adult content or discriminatory content; promote Habit or place referral links near other ads or links that lead to such content; or link to or include other inappropriate content, each as determined in Habit’s sole discretion. <br />
+&nbsp; &nbsp; &nbsp;&bull;Promote <%= I18n.t('config.company_name')%> or place referral links on any site that includes adult content or discriminatory content; promote <%= I18n.t('config.company_name')%> or place referral links near other ads or links that lead to such content; or link to or include other inappropriate content, each as determined in <%= I18n.t('config.company_name')%>’s sole discretion. <br />
 <br />
 <b>Bulk Distribution ("Spam")</b><br />
 If a Referrer provides a Personal Promotional Code to a Referred Customer by email, the email must be created and distributed in a personal manner that is appropriate and customary for communications with friends, colleagues and family relationship. By submitting the email addresses of strangers, the Referrer represents that he/she has the recipient's prior consent. <br />

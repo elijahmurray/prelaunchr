@@ -5,6 +5,9 @@ en:
   config:
     company_name: "The Greeting Card Club"
     company_url: "http://www.thegreetingcardclub.com"
+    admin_company_name: "Blue Fantail, LLC"
+    admin_company_address: "43-01 22nd St, #408 Long Island City, NY 11101"
+    admin_company_url: "http://www.bluefantail.com"
   amazon_policies:
     section_1: ""
     section_2: ""
@@ -21,6 +24,3 @@ en:
     rewards:
       referrals_label: "FRIENDS JOINED"
       rewards_label: "CARDS EARNED"
-    social_message:
-      facebook: ! "Can't wait for @greetingcardclb to launch! Never going to forget another birthday. #BirthdaySkills %{referral_link}"
-      twitter: ! "Can't wait for @greetingcardclb to launch! Never going to forget another birthday. #BirthdaySkills %{referral_link}"
