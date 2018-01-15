@@ -14,7 +14,7 @@ module ApplicationHelper
   def puppy_url
     case Rails.env
     when 'development'
-      root_url
+      'http://localhost:5000'
     when 'production'
       Rails.application.config.action_mailer.default_url_options
     end
