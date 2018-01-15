@@ -60,7 +60,7 @@ Prelaunchr::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-#  config.action_mailer.default_url_options = { :host => ENV['SMTP_DOMAIN'] }
+  config.action_mailer.default_url_options = { :host => ENV['DEFAULT_MAILER_HOST'] }
 #  config.action_mailer.smtp_settings = {
 #    address:              ENV.fetch('SMTP_ADDRESS', 'smtp.sendgrid.net'),
 #    port:                 ENV.fetch('SMTP_PORT', '587'),
