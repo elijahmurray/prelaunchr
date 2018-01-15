@@ -8,15 +8,6 @@ module ApplicationHelper
   end
 
   def referral_link(referral_code)
-    "#{puppy_url}/referral?code=#{CGI::escape(referral_code)}"
-  end
-
-  def puppy_url
-    case Rails.env
-    when 'development'
-      'http://localhost:5000'
-    when 'production'
-      Rails.application.config.action_mailer.default_url_options
-    end
+    "#{Rails.application.config.action_mailer.default_url_options}/referral?code=#{CGI::escape(referral_code)}"
   end
 end
