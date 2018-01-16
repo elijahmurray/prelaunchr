@@ -1,4 +1,5 @@
 class @GoogleAnalytics
+  # Followed tutorial here: http://railsapps.github.io/rails-google-analytics.html
 
   @load: ->
     # Google Analytics depends on a global _gaq array. window is the global scope.
