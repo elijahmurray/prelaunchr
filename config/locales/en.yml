@@ -17,7 +17,10 @@ en:
     section_2: ""
   homepage:
     header: "The Greeting Card Club is Coming"
-    subheader: "Birthdays need cards like you need cake."
+    subheader_html: 
+      "Pre-stamped envelope + card sent to you, <br>
+      2 weeks before the date.<br><br>
+      Just sign and send."
     form_title: "Join the Club"
     submit_email_text: "Step Inside"
     email_form_subtext: ""

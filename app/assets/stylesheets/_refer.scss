@@ -32,7 +32,8 @@
     }
   }
   .hero-darkened-background {
-    background: url("refer/header-bg-desktop.jpg") center;
+    background: url("/assets/refer/header-bg-desktop.jpg") center no-repeat;
+    background-size: cover;
   }
   .hero-black-background {
     background-color: rgba(0,0,0,.3);
