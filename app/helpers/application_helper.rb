@@ -8,7 +8,7 @@ module ApplicationHelper
   end
 
   def referral_link(referral_code)
-    "#{host_url}referral?code=#{CGI::escape(referral_code)}"
+    "#{host_url}?ref=#{CGI::escape(referral_code)}"
   end
 
   def host_url
