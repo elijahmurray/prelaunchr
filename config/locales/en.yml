@@ -9,9 +9,9 @@ en:
     admin_company_address: "43-01 22nd St, #408 Long Island City, NY 11101"
     admin_company_url: "http://www.bluefantail.com"
     mail:
-      from: 'Greeting Card Club'
+      from: 'The Greeting Card Club'
       from_email: 'support@thegreetingcardclub.com'
-      subject: "Start sharing Habit to earn $100+ in Amazon eGift Cards"
+      subject: "Share The Greeting Card Club – 1 friend = 1 free card!"
   amazon_policies:
     section_1: ""
     section_2: ""
@@ -28,7 +28,7 @@ en:
   referral:
     title_html: "Giving Cards <br> Just Got Easier"
     instructions: "Share your unique link via email, Facebook, or Twitter and get rewarded, courtesy of The Greeting Card Club."
-    short_description: "Get free cards when a friend buys a card!"
+    short_description: "Earn free cards when your friends buy cards!"
     rewards:
       referrals_label: "FRIENDS JOINED"
       rewards_label: "CARDS EARNED"
