@@ -8,6 +8,7 @@ en:
     admin_company_name: "Blue Fantail, LLC"
     admin_company_address: "43-01 22nd St, #408 Long Island City, NY 11101"
     admin_company_url: "http://www.bluefantail.com"
+    copyright_year: 2018
     mail:
       from: 'The Greeting Card Club'
       from_email: 'support@thegreetingcardclub.com'
