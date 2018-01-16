@@ -21,13 +21,13 @@
     <table class="table" style="display: block; width: 100%;" bgcolor="#ffffff">
     <thead class="table-head" style="margin-top: 20px; display: block; width: 100%; text-align: center;">
       <tr style="display: block; font-family: arial;"><td style="display: block; font-family: arial;"><%= image_tag image_url('email/logo-dark.png') , alt: 'I18n.t("config.company_name") Logo', :style => "margin-bottom: 10px;" %></td></tr>
-      <tr style="display: block; font-family: arial;"><td style="display: block; font-family: arial;"><%= image_tag image_url('email/email-hero.png') , alt: 'I18n.t("config.company_name") Header', :style => "width: 100%; height: auto; max-width: 600px;" %></td></tr>
+      <tr style="display: block; font-family: arial;"><td style="display: block; font-family: arial;"><%= image_tag image_url('email/email-hero.jpg') , alt: 'I18n.t("config.company_name") Header', :style => "width: 100%; height: auto; max-width: 600px;" %></td></tr>
     </thead>
 
     <tbody style="display: block; text-align: center; font-size: 14px; padding-left: 10px; padding-right: 10px;">
       <tr style="display: block; font-family: arial;">
         <td class="body-header-text" style="display: block; margin: 0 auto; padding: 30px 10px; font-family: arial; font-weight: bold; font-size: 22px; color: #4A4A4A; max-width: 430px;"><%= I18n.t('referral.short_description') %></td>
-        <td class="body-message-text" style="display: block; font-family: arial;">Forward this unique promo code <%= @user.referral_code %> and link to your friends:</td>
+        <td class="body-message-text" style="display: block; font-family: arial;">Forward link to your friends:</td>
         <td class="body-link-wrapper" style="display: block; font-family: arial; padding-top: 30px; padding-bottom: 30px;"><input class="body-main-link" disabled="disabled" type="text" value="<%= referral_link(@user.referral_code) %>" style="font-size: 20px; background-color: #F6F6F5; color: #CBCACA; max-width: 340px; padding: 10px; border: 1px solid #979797;" /></td>
         <td style="display: block; font-family: arial;">Or share online:</td>
         <td style="display: block; font-family: arial;"></td>

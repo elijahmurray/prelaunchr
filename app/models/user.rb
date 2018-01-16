@@ -14,8 +14,8 @@ class User < ActiveRecord::Base
   after_create :send_welcome_email
   REFERRAL_REWARDS = [
     '1 free card',
-    '5 free cards',
-    '1 year of free cards (12)'
+    '2 free cards',
+    '5 free cards + special bonus gift'
   ]
 
   REFERRAL_STEPS = [
@@ -23,19 +23,19 @@ class User < ActiveRecord::Base
       'count' => 1,
       'html' => REFERRAL_REWARDS[0],
       'class' => 'one',
-      'count_label' => '1'
+      'count_label' => '5'
     },
     {
       'count' => 2,
       'html' => REFERRAL_REWARDS[1],
       'class' => 'two',
-      'count_label' => '2'
+      'count_label' => '10'
     },
     {
       'count' => 3,
       'html' => REFERRAL_REWARDS[2],
       'class' => 'three',
-      'count_label' => '3'
+      'count_label' => '20'
     }
   ]
 
