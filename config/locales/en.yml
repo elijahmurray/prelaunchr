@@ -13,6 +13,10 @@ en:
       from: 'The Greeting Card Club'
       from_email: 'support@thegreetingcardclub.com'
       subject: "Share The Greeting Card Club – 1 friend = 1 free card!"
+    metadata:
+      title: "Pre-Stamped Greeting Cards – Just Sign and Send | The Greeting Card Club"
+      description: "The Greeting Card Club believes that being caring should be easy. We send you a pre-stamped envelope and card, that you can personalize and gift. All you have to do is sign and send!"
+
   amazon_policies:
     section_1: ""
     section_2: ""

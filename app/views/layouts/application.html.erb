@@ -5,13 +5,13 @@
 <!--[if IE 9 ]>    <html class="ie9 <%= @bodyId %>"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="<%= @bodyId %>"> <!--<![endif]-->
 <head>
-  <title>Personalized Nutrition Designed for Better Health & Weight Loss | Habit</title>
+  <title><%= I18n.t('config.metadata.title') %> </title>
 
   <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
   <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
 
-  <meta property="og:title" content="Personalized Nutrition Designed for Better Health & Weight Loss | Habit"/>
-  <meta property="og:description" content="Habit provides custom nutrition plans based on your unique biology, and our nutritionists and fresh meals can help you reach your health goals. Learn more."/>
+  <meta property="og:title" content="<%= I18n.t('config.metadata.title') %>"/>
+  <meta property="og:description" content="<%= I18n.t('config.metadata.description') %>"/>
   <meta property="og:image" content="<%= asset_path("refer/social.jpg") %>"/>
   <meta property="og:url" content="<%= asset_path("refer/social.jpg") %>" />
   <% if @is_mobile %>
