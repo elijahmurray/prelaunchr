@@ -14,11 +14,10 @@
   <meta property="og:description" content="<%= I18n.t('config.metadata.description') %>"/>
   <meta property="og:image" content="<%= asset_path("refer/social.jpg") %>"/>
   <meta property="og:url" content="<%= asset_path("refer/social.jpg") %>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <% if @is_mobile %>
     <% if @bodyId == 'home' %>
-      <meta name="viewport" content="width=1600" />
     <% else %>
-      <meta name="viewport" content="width=1120" />
     <% end %>
   <% end %>
   <%= stylesheet_link_tag "application", :media => "all" %>
