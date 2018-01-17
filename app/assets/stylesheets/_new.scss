@@ -2,7 +2,6 @@
   NEW PAGE
 \*------------------------------------*/
 
-$light-text-shadow: 0px 2px 5px rgba(0,0,0,.5);
 
 // min-width: 0px
 #new {
@@ -17,17 +16,18 @@ $light-text-shadow: 0px 2px 5px rgba(0,0,0,.5);
     .hero-headline-wrapper {
       h1 {
         color: $white;
-        text-shadow: $light-text-shadow; 
+        font-weight: bold;
 
         &::after {
           background-color: $white;
         }
       }
       p {
-        font-size: 1.5em;
-        margin-bottom: 50px;
-        text-shadow: $light-text-shadow; 
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: medium;
       }
+
     }
   }
   .form-wrapper {
@@ -52,17 +52,18 @@ $light-text-shadow: 0px 2px 5px rgba(0,0,0,.5);
     .email{
       @include placeholder-color($gray-lightest);
       text-indent: 10px;
-      border: 1px solid $green;
+      border: 1px solid $gray-lightest;
       width: 100%;
       height: 40px;
-      font-size: 20px;
+      font-size: 17px;
       margin: 50px 0 0 0;
       border-radius: 0;
     }
     .submit{
       width: 100%;
       height: 50px;
-      background-color: $green;
+      background-color: $red;
+      color: $white;
       margin: 15px 0 60px 0;
       text-transform: uppercase;
       border: 0;
@@ -91,11 +92,12 @@ $light-text-shadow: 0px 2px 5px rgba(0,0,0,.5);
       }
       .hero-headline-wrapper {
         h1 {
-          font-size: 42px;
+          font-size: 40px;
         }
         p {
-          font-size: 20px;
-          line-height: 27px;
+          font-size: 23px;
+          line-height: 30px;
+          font-weight: medium;
         }
       }
     }
@@ -125,10 +127,15 @@ $light-text-shadow: 0px 2px 5px rgba(0,0,0,.5);
 @media only screen and (min-width: $desktop) {
   #new {
     .hero {
-      background-image: image-url("new/header-bg-desktop.jpg");
+      background-image: image-url("new/header-bg-tablet.jpg");
       .hero-headline-wrapper {
-        width: 425px;
+        width: 525px;
+        
+        h1 {
+          font-size: 52px;
+        }
         p {
+          font-weight: bold;
           margin-bottom: 70px;
         }
       }
