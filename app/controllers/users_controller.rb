@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   include ApplicationHelper
 
   before_filter :skip_first_page, only: :new
-  before_filter :handle_ip, only: :create
+  #before_filter :handle_ip, only: :create
 
   def new
     @bodyId = 'new'
